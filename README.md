@@ -1,4 +1,4 @@
-Use node version 20.2.0 to run the project without conflicts
+Use node version 20.2.0
 
 Steps to setup the project
 
