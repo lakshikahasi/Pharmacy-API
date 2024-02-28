@@ -1,0 +1,655 @@
+{
+	"info": {
+		"_postman_id": "da01729a-8fef-4734-8eba-6c260771ae9a",
+		"name": "api-server-nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12388544"
+	},
+	"item": [
+		{
+			"name": "Medicine",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3YjRlZjJmLWQ5ZmUtNDRmZi1hYzdiLTM1ZWI2ODk1OGFmYSIsInVzZXJuYW1lIjoib3duZXIiLCJyb2xlIjoiNWMxOTQ0MDEtMGMzMS00YmJmLTgwYTEtZWUyZGZkNDA1ODk5IiwiZW1haWwiOiJvd25lciIsImlhdCI6MTcwOTA2MDA4OCwiZXhwIjoxNzA5MTQ2NDg4fQ.zcJ8fOEyxNmQdKx2JheK30KE994-7wt4gdslQvoiNY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Medicine 02\",\r\n    \"description\":\"Greate Medicine\", \r\n    \"quantity\":10\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/medicine/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"medicine",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3YjRlZjJmLWQ5ZmUtNDRmZi1hYzdiLTM1ZWI2ODk1OGFmYSIsInVzZXJuYW1lIjoib3duZXIiLCJyb2xlIjoiNWMxOTQ0MDEtMGMzMS00YmJmLTgwYTEtZWUyZGZkNDA1ODk5IiwiZW1haWwiOiJvd25lciIsImlhdCI6MTcwOTA2MDA4OCwiZXhwIjoxNzA5MTQ2NDg4fQ.zcJ8fOEyxNmQdKx2JheK30KE994-7wt4gdslQvoiNY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/medicine/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"medicine",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3YjRlZjJmLWQ5ZmUtNDRmZi1hYzdiLTM1ZWI2ODk1OGFmYSIsInVzZXJuYW1lIjoib3duZXIiLCJyb2xlIjoiNWMxOTQ0MDEtMGMzMS00YmJmLTgwYTEtZWUyZGZkNDA1ODk5IiwiZW1haWwiOiJvd25lciIsImlhdCI6MTcwOTA2MDA4OCwiZXhwIjoxNzA5MTQ2NDg4fQ.zcJ8fOEyxNmQdKx2JheK30KE994-7wt4gdslQvoiNY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/medicine/e31fe94d-5bd5-4007-8f3d-798193b5940b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"medicine",
+								"e31fe94d-5bd5-4007-8f3d-798193b5940b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3YjRlZjJmLWQ5ZmUtNDRmZi1hYzdiLTM1ZWI2ODk1OGFmYSIsInVzZXJuYW1lIjoib3duZXIiLCJyb2xlIjoiNWMxOTQ0MDEtMGMzMS00YmJmLTgwYTEtZWUyZGZkNDA1ODk5IiwiZW1haWwiOiJvd25lciIsImlhdCI6MTcwOTA2MDA4OCwiZXhwIjoxNzA5MTQ2NDg4fQ.zcJ8fOEyxNmQdKx2JheK30KE994-7wt4gdslQvoiNY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Medicine 01 s\",\r\n    \"description\":\"Greate Medicine Edited\",\r\n    \"quantity\":50000\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/medicine/e31fe94d-5bd5-4007-8f3d-798193b5940b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"medicine",
+								"e31fe94d-5bd5-4007-8f3d-798193b5940b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "JWT_TOKEN_HERE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/medicine/1b935dc3-1b72-4f0a-a299-0e757f84bf17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"medicine",
+								"1b935dc3-1b72-4f0a-a299-0e757f84bf17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hard Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "JWT_TOKEN_HERE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/medicine/hard/1b935dc3-1b72-4f0a-a299-0e757f84bf17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"medicine",
+								"hard",
+								"1b935dc3-1b72-4f0a-a299-0e757f84bf17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "authorization",
+								"value": "JWT_TOKEN_HERE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"JWT_TOKEN_HERE\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"pass\", \r\n    \"username\":\"owner\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"test\",\r\n    \"password\":\"pass\", \r\n    \"email\":\"test@appseed.us\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3YjRlZjJmLWQ5ZmUtNDRmZi1hYzdiLTM1ZWI2ODk1OGFmYSIsInVzZXJuYW1lIjoib3duZXIiLCJyb2xlIjoiNWMxOTQ0MDEtMGMzMS00YmJmLTgwYTEtZWUyZGZkNDA1ODk5IiwiZW1haWwiOiJvd25lciIsImlhdCI6MTcwOTA2MDA4OCwiZXhwIjoxNzA5MTQ2NDg4fQ.zcJ8fOEyxNmQdKx2JheK30KE994-7wt4gdslQvoiNY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Customer 02\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/customer/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"customer",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "JWT_TOKEN_HERE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Customer 065\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/customer/18d4c030-9bc5-46d2-8db2-35f73e2552ac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"customer",
+								"18d4c030-9bc5-46d2-8db2-35f73e2552ac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3YjRlZjJmLWQ5ZmUtNDRmZi1hYzdiLTM1ZWI2ODk1OGFmYSIsInVzZXJuYW1lIjoib3duZXIiLCJyb2xlIjoiNWMxOTQ0MDEtMGMzMS00YmJmLTgwYTEtZWUyZGZkNDA1ODk5IiwiZW1haWwiOiJvd25lciIsImlhdCI6MTcwOTA2MDA4OCwiZXhwIjoxNzA5MTQ2NDg4fQ.zcJ8fOEyxNmQdKx2JheK30KE994-7wt4gdslQvoiNY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/customer/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"customer",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3YjRlZjJmLWQ5ZmUtNDRmZi1hYzdiLTM1ZWI2ODk1OGFmYSIsInVzZXJuYW1lIjoib3duZXIiLCJyb2xlIjoiNWMxOTQ0MDEtMGMzMS00YmJmLTgwYTEtZWUyZGZkNDA1ODk5IiwiZW1haWwiOiJvd25lciIsImlhdCI6MTcwOTA2MDA4OCwiZXhwIjoxNzA5MTQ2NDg4fQ.zcJ8fOEyxNmQdKx2JheK30KE994-7wt4gdslQvoiNY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/customer/18d4c030-9bc5-46d2-8db2-35f73e2552ac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"customer",
+								"18d4c030-9bc5-46d2-8db2-35f73e2552ac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "JWT_TOKEN_HERE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/customer/55eaa6a5-7ebb-408a-812c-612174d05fdb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"customer",
+								"55eaa6a5-7ebb-408a-812c-612174d05fdb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hard Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "JWT_TOKEN_HERE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/customer/hard/55eaa6a5-7ebb-408a-812c-612174d05fdb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"customer",
+								"hard",
+								"55eaa6a5-7ebb-408a-812c-612174d05fdb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "medicine dispense",
+			"item": [
+				{
+					"name": "Dispense Medicine",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM3YjRlZjJmLWQ5ZmUtNDRmZi1hYzdiLTM1ZWI2ODk1OGFmYSIsInVzZXJuYW1lIjoib3duZXIiLCJyb2xlIjoiNWMxOTQ0MDEtMGMzMS00YmJmLTgwYTEtZWUyZGZkNDA1ODk5IiwiZW1haWwiOiJvd25lciIsImlhdCI6MTcwOTA2MDA4OCwiZXhwIjoxNzA5MTQ2NDg4fQ.zcJ8fOEyxNmQdKx2JheK30KE994-7wt4gdslQvoiNY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"medicine\":\"e31fe94d-5bd5-4007-8f3d-798193b5940b\",\r\n    \"customer\":\"18d4c030-9bc5-46d2-8db2-35f73e2552ac\", \r\n    \"quantity\":9\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/dispense",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"dispense"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hard Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "JWT_TOKEN_HERE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/dispense/hard/55eaa6a5-7ebb-408a-812c-612174d05fdb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"dispense",
+								"hard",
+								"55eaa6a5-7ebb-408a-812c-612174d05fdb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Soft Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "authorization",
+								"value": "JWT_TOKEN_HERE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/dispense/55eaa6a5-7ebb-408a-812c-612174d05fdb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"dispense",
+								"55eaa6a5-7ebb-408a-812c-612174d05fdb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
